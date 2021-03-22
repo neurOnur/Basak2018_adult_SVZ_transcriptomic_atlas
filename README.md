@@ -1,0 +1,10 @@
+# Summary
+We analysed the adult mouse subependymal zone (SEZ), the largest neruogenic niche in the brain, at a single cell level. For this, we used SORT-seq, a combination of FACS and single cell RNA-sequencing that resulted in high quality transcriptome data from ~1500 single cells (out of ~2500 cells sequenced). To identify different cell types, we used knock-in mouse models, surface labeling using antibdoies as well as lineage tracing. Troy-GFPiresCreER +/ki mice were used to identify NSCs. Ki67-tagRFP ki/ki mice were used to identify dividing cells. Ki67-iresCreER +/ki Rosa-tdTomato +/ki mice were administered a single injection of 5mg of Tamoxifen to label dividing cells (day2 - d2) and follow their progeny (day60 - d60) in the SEZ as well as the olfactory bulb (for d60 only). We also included published markers; combinations of anti-GLAST antibody (to identify NSCs) and EGF binding ability using alexa647-conjugated EGF (to identify dividing cells), combinations of anti-Prom1 (Cell contacting the ventricles) and anti-CD24 antibodies (high in neuroblasts), as well as anti-O4 antibody (oligodendrocytes) to create an atlas of NSCs.
+# Files
+In ./data, you will find the rawdata used for hte analysis. Please note that these analysis were done at 2016 when we used bwa for maapping the data onto mm9 genome built. Using STAR and a newer genome built (annotation file) increases the number of reads and likely the accuracy. This way we also gain splicing information. These data will be made available shortly
+
+**Basak2018_revisions_neurogenesis_only.txt.zip** has 1240 cells that are in the neurogenic cascade (a.i. from NSCs until olfactory neurons). This is the file used to generate the figures shown in Figure 2 and any downstream analysis 
+**Basak2018_revisions_cellsfiltered.txt.zip** has 1465 that passed the quality control. This file was used to generate the data in supplementary figures and includes microglia, endothelial cells, oligodendrocytes etc
+**Basak2018_rawdata_full.txt.zip** has all 2572 cells sequenced
+
+In all cases, files have 17777 features (these are not filtered)
